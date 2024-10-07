@@ -1,0 +1,20 @@
+travel_log={
+    "france":["paris","lille","dijon"],
+    "germany":["stuttgart","berlin"]
+}
+#print(travel_log["france"][1]) 
+#nested_list=["A","b",["c","d"]]
+#print(nested_list[2])
+
+travel_log={
+    "france":{
+        "cities_visited":["paris","lille","dijon"],
+        "total_visits":12
+    },
+    "germany":{
+        "cities_visited":["berlin","hamburg","stuttgart"],
+        "total_visits":5
+    }
+}
+print(travel_log["france"]["cities_visited"][2])
+print(travel_log["germany"]["total_visits"])
